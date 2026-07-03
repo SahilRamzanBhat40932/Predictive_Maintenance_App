@@ -15,6 +15,12 @@ scaler = joblib.load("scaler.pkl")
 # Page Configuration
 # ----------------------------------------------------
 
+st.set_page_config(
+    page_title="Predictive Maintenance Dashboard",
+    page_icon="🏭",
+    layout="wide"
+)
+
 st.markdown("""
 <h1>🏭 Predictive Maintenance Dashboard</h1>
 
@@ -27,13 +33,6 @@ AI4I 2020 Dataset • Random Forest Classifier • Industrial Machine Failure Pr
 </div>
 
 """, unsafe_allow_html=True)
-
-
-st.set_page_config(
-    page_title="Predictive Maintenance Dashboard",
-    page_icon="🏭",
-    layout="wide"
-)
 
 
 # ----------------------------------------------------

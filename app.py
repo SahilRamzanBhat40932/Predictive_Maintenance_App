@@ -182,29 +182,43 @@ with col1:
 
     air_temp = st.number_input(
         "Air Temperature (K)",
-        value=300.0
+        min_value=295.3,
+        max_value=304.5,
+        value=300.0,
+        step=0.1
     )
 
     process_temp = st.number_input(
         "Process Temperature (K)",
-        value=310.0
+        min_value=303.0,
+        max_value=315.0,
+        value=310.0,
+        step=0.1
     )
 
 with col2:
 
     rpm = st.number_input(
         "Rotational Speed (RPM)",
-        value=1500
+        min_value=1168.0,
+        max_value=2886.0,
+        value=1500.0
     )
 
     torque = st.number_input(
         "Torque (Nm)",
-        value=40.0
+        min_value=3.8,
+        max_value=76.6,
+        value=40.0,
+        step=0.1
     )
 
     tool_wear = st.number_input(
         "Tool Wear (minutes)",
-        value=50
+        min_value=0.0,
+        max_value=253.0,
+        value=50.0,
+        step=0.1
     )
 
 st.markdown("---")

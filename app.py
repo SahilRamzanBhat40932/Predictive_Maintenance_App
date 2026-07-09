@@ -185,11 +185,10 @@ with col1:
         min_value=295.3,
         max_value=304.5,
         value=300.0,
-        step=0.1,
-        help="Allowed range: 295.3 K to 304.5 K"
+        step=0.1
     )
-    st.caption("Range: 295.3 K – 304.5 K")
-
+    st.caption("✅ Allowed Range: 295.3 – 304.5 K")
+    
     process_temp = st.number_input(
         "Process Temperature (K)",
         min_value=303.0,
@@ -197,6 +196,7 @@ with col1:
         value=310.0,
         step=0.1
     )
+    st.caption("✅ Allowed Range: 303.0 – 315.0 K")
 
 with col2:
 
@@ -206,6 +206,7 @@ with col2:
         max_value=2886.0,
         value=1500.0
     )
+    st.caption("✅ Allowed Range: 1168 – 2886")
 
     torque = st.number_input(
         "Torque (Nm)",
@@ -214,6 +215,7 @@ with col2:
         value=40.0,
         step=0.1
     )
+    st.caption("✅ Allowed Range: 3.8 – 76.6")
 
     tool_wear = st.number_input(
         "Tool Wear (minutes)",
@@ -222,6 +224,7 @@ with col2:
         value=50.0,
         step=0.1
     )
+    st.caption("✅ Allowed Range: 0.0 – 253.0")
 
 st.markdown("---")
 

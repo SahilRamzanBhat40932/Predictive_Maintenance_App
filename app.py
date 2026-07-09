@@ -186,7 +186,9 @@ with col1:
         max_value=304.5,
         value=300.0,
         step=0.1
+        help="Allowed range: 295.3 K to 304.5 K"
     )
+    st.caption("Range: 295.3 K – 304.5 K")
 
     process_temp = st.number_input(
         "Process Temperature (K)",
